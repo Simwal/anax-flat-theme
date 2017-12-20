@@ -1,0 +1,164 @@
+/**
+* Anax Flat theme.
+*/
+@import url(normalize.less);
+
+// Basic region structure
+//@import url(regions.less);
+
+// Responsive menu
+@import url(responsive-menu.less);
+
+// Responsive menu
+@import url(header.less);
+
+//@import url(grid-flex);
+@import url(layout.less);
+@import url(grid-float);
+//@import url(grid-helpers.less);
+
+@import url(typo/typography.less);
+
+@import url(figure.less);
+
+
+
+// Media-queries
+@import url(media-queries.less);
+
+html {
+    background-image: url("../img/theme3.jpg");
+    overflow-x: hidden;
+
+}
+
+
+html.vgrid {
+        .showGrid(900px);
+    }
+
+    .showGrid(@maxWidth: 1100px) {
+        //background: url(../img/grid/grid960x24x30x10.png) repeat-y fixed center center;
+        background: url(../img/grid/grid940x12x60x20-nomargin.png) repeat-y fixed center center;
+        background-size: 100% auto;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: @maxWidth;
+
+        @media (min-width: @maxWidth) {
+            background-size: @maxWidth auto;
+        }
+    }
+
+.inner-wrap {
+        max-width: 100%;
+    }
+
+.flash-wrap, .breadcrumb-wrap, .byline, .toc {
+    margin-left: 100px;
+}
+
+.footer-column {
+    text-align: center;
+}
+
+.footer-column ul {
+    padding: 0px;
+
+}
+
+.flash-wrap img {
+    border-style: dotted;
+    border-width: 3px;
+    border-color: teal;
+}
+
+
+/** --------------------------------------------------------------
+ *  Logo images
+ */
+.logo-1 {
+    display:none;
+}
+
+.site-logo-text {
+    float:left;
+}
+
+.site-logo-text-icon {
+    img {
+        vertical-align: bottom;
+    }
+}
+
+
+#img-me-small {
+    overflow:auto;
+    margin-right:4px;
+    //border: none;
+}
+
+article {
+    display: block;
+    overflow: auto;
+
+}
+
+.byline {
+    height:103px;
+     width:300px;
+     border-radius: 12px;
+     border: 2px solid teal;
+}
+
+.byline p {
+    margin-top: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.sidebar-right {
+    float:right;
+    overflow:auto;
+    width:200px;
+
+}
+
+.grid-sidebar-left {
+    float:left;
+    overflow:auto;
+    width:400px;
+
+}
+
+figcaption {
+    font-size:0.9em;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+
+.meta-footer p {
+    clear:both !important;
+
+
+}
+
+a:visited, a:link {
+    color:black;
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.figure img {
+    border-style: solid;
+    border-width: 5px;
+    border-color: teal;
+}
+
+.byline img {
+    border-style: none;
+}

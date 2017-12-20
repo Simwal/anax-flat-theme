@@ -1,0 +1,90 @@
+/**
+* Anax Flat theme.
+*/
+@import url(base.less);
+
+@back_color: #ffc4c4;
+@menu_color: #ff4e4e;
+@footer_color: #ff4e4e ;
+@border_color: #ff4e4e;
+
+html {
+    background-color: @back_color;
+}
+
+.rm-desktop li a {
+    background-color: @menu_color;
+}
+
+.rm-desktop li a:hover {
+    background-color: @menu_color;
+
+}
+
+#rm-menu-button{
+    color: @menu_color;
+}
+
+.rm-clicked{
+    color: black !important;
+}
+
+.rm-mobile, .rm-submenu-button {
+    background-color: @menu_color !important;
+}
+main h1 {
+    border-bottom: 3px solid @border_color;
+}
+article h2 {
+    border-bottom: 2px solid @border_color;
+}
+
+.breadcrumb-list a {
+    border-bottom: 1px solid @border_color;
+}
+
+.inner-wrap-footer {
+    background-color: @footer_color;
+}
+
+.site-logo-text a:hover {
+    text-decoration: underline;
+    text-decoration-color: @menu_color;
+}
+
+a:visited, a:link {
+    color:black;
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+article img, .flash-wrap img, .byline {
+    border: 3px ridge @border_color;
+
+}
+.site-logo-text-icon img{
+    //display:none;
+    visibility: hidden;
+}
+
+.site-logo-text-icon {
+    background-image: url("../img/favicon/favicon_40x403.png") !important;
+    background-repeat: no-repeat;
+}
+
+.footer-column ul {
+    padding: 0px;
+
+}
+
+.inner-wrap-footer {
+    text-align: center;
+}
